@@ -7,9 +7,13 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      backgroundColor: Colors.white,
       child: ListView(
-        children: [
+        children: <Widget>[
           UserAccountsDrawerHeader(
+            decoration: BoxDecoration(
+              color: Colors.blue, // Change this to your desired color
+            ),
             currentAccountPicture: ClipRRect(
               borderRadius: BorderRadius.circular(45),
               child: Image.network(
